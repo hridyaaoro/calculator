@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+       .btn {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        }
+    </style>       
+      
+</head>
+<body>
+    
+        <div class="container p-5 border mt-3 bg-light w-25 text-center">
+        <h2>Calculator</h2>
+        <input id="n1" type="text" class="form-control"><br>
+        <button type="submit" onclick="display(1)" class="btn btn-info mt-3 ">1</button>
+        <button type="submit" onclick="display(2)" class="btn btn-info mt-3">2</button>
+        <button type="submit" onclick="display(3)"class="btn btn-info mt-3">3</button>
+        <button type="submit" onclick="display(4)"class="btn btn-info mt-3">4</button><br>
+        <button type="submit" onclick="display(5)" class="btn btn-info mt-3">5</button>
+        <button type="submit" onclick="display(6)"class="btn btn-info mt-3">6</button>
+        <button type="submit" onclick="display(7)"class="btn btn-info mt-3">7</button>
+        <button type="submit" onclick="display(8)"class="btn btn-info mt-3">8</button><br>
+        <button type="submit" onclick="display(9)"class="btn btn-info mt-3">9</button>
+        <button type="submit" onclick="display(0)"class="btn btn-info mt-3">0</button>
+        <button type="submit" onclick="display('+')"class="btn btn-info mt-3">+</button>
+        <button type="submit" onclick="display('-')"class="btn btn-info mt-3">-</button><br>
+        <button type="submit" onclick="display('/')"class="btn btn-info mt-3">/</button>
+        <button type="submit" onclick="display('x')"class="btn btn-info mt-3">x</button>
+        <button type="submit" onclick="allclear()"class="btn btn-info mt-3">AC</button>
+        <button type="submit" onclick="backspace()"class="btn btn-info mt-3">&#9003</button><br>
+        <button type="submit" onclick="evalexp()"class="btn btn-dark mt-4">=</button>
+    </div>
+    
+    
+</body>
+
+<script src="./calc.js">
+
+</script>
+</html>
